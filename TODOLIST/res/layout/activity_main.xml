@@ -9,12 +9,14 @@
     tools:context=".MainActivity" >
 
     <CalendarView
-        android:id="@+id/calendarView1"
+        android:id="@+id/takvim"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true" />
+        android:layout_alignParentTop="true"
+        android:clickable="true"
+         />
 
 </RelativeLayout>
