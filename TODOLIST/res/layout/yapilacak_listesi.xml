@@ -8,6 +8,7 @@
         android:id="@+id/editText1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:hint="00:00 - 01:00"
         android:ems="10" >
 
         <requestFocus />
@@ -17,138 +18,166 @@
         android:id="@+id/editText2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+         android:hint="01:00 - 02:00"
         android:ems="10" />
 
     <EditText
         android:id="@+id/editText3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+         android:hint="02:00 - 03:00"
         android:ems="10" />
 
     <EditText
         android:id="@+id/editText4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+         android:hint="03:00 - 04:00"
         android:ems="10" />
 
     <EditText
         android:id="@+id/editText5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+         android:hint="04:00 - 05:00"
         android:ems="10" />
 
     <EditText
         android:id="@+id/editText6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+         android:hint="05:00 - 06:00"
         android:ems="10" />
-
+    
     <EditText
         android:id="@+id/editText7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:hint="06:00 - 07:00"
         android:ems="10" />
+    
 
     <EditText
         android:id="@+id/editText8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+         android:hint="07:00 - 08:00"
         android:ems="10" />
 
     <EditText
         android:id="@+id/editText9"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+         android:hint="08:00 - 09:00"
         android:ems="10" />
 
     <EditText
         android:id="@+id/editText10"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+         android:hint="09:00 - 10:00"
         android:ems="10" />
 
     <EditText
         android:id="@+id/editText11"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+         android:hint="10:00 - 11:00"
         android:ems="10" />
 
     <EditText
         android:id="@+id/editText12"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+         android:hint="11:00 - 12:00"
         android:ems="10" />
 
     <EditText
         android:id="@+id/editText13"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+         android:hint="12:00 - 13:00"
         android:ems="10" />
 
     <EditText
         android:id="@+id/editText14"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+         android:hint="13:00 - 14:00"
         android:ems="10" />
 
     <EditText
         android:id="@+id/editText15"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+         android:hint="14:00 - 15:00"
         android:ems="10" />
 
     <EditText
         android:id="@+id/editText16"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+         android:hint="15:00 - 16:00"
         android:ems="10" />
 
     <EditText
         android:id="@+id/editText17"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+         android:hint="16:00 - 17:00"
         android:ems="10" />
 
     <EditText
         android:id="@+id/editText18"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+         android:hint="17:00 - 18:00"
         android:ems="10" />
 
-    <EditText
+     <EditText
         android:id="@+id/editText19"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:hint="18:00 - 19:00"
         android:ems="10" />
-
+    
+    
     <EditText
         android:id="@+id/editText20"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+         android:hint="19:00 - 20:00"
         android:ems="10" />
 
     <EditText
         android:id="@+id/editText21"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+         android:hint="20:00 - 21:00"
         android:ems="10" />
 
     <EditText
         android:id="@+id/editText22"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+         android:hint="21:00 - 22:00"
         android:ems="10" />
-    
+
     <EditText
         android:id="@+id/editText23"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+         android:hint="22:00 - 23:00"
         android:ems="10" />
-    
+
     <EditText
         android:id="@+id/editText24"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+         android:hint="23:00 - 00:00"
         android:ems="10" />
-
+    
+   
+    
+    
 </LinearLayout>
