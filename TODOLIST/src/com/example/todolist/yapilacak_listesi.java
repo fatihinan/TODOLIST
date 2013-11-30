@@ -38,6 +38,9 @@ public class yapilacak_listesi extends Activity
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.yapilacak_listesi);
 		
+		
+		
+		
 		textview_0_1 = (TextView) findViewById(R.id.editText1);
 		textview_1_2 = (TextView) findViewById(R.id.editText2);
 		textview_2_3 = (TextView) findViewById(R.id.editText3);
