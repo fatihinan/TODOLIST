@@ -1,8 +1,15 @@
 package com.example.todolist;
 
+import java.io.StringWriter;
+
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerException;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
 
 import org.w3c.dom.Document;
 
@@ -94,7 +101,38 @@ public class yapilacak_listesi extends Activity
 	    }
 	    
 		
+	   public String Im_BelgedenStringYarat( Document doc_belge )
+	   {
+	       try
+	       {
+				DOMSource belge_kaynagi = new DOMSource( doc_belge );
+				
+				StringWriter yazici = new StringWriter();
+				
+				StreamResult sonuc = new StreamResult( yazici );
+	          
+				TransformerFactory donusum_ureteci = TransformerFactory.newInstance();
+				
+				Transformer donusturucu = donusum_ureteci.newTransformer();
+	          
+				donusturucu.transform( belge_kaynagi, sonuc );
+				
+				String str_yazici = yazici.toString();
+				return str_yazici;
+	       }
+	       catch( TransformerException ex )
+	       {
+				ex.printStackTrace();
+				return null;
+	       }
+	   }
+	   
+	   
+	   
+		
 
 }
+
+
 
 
