@@ -229,13 +229,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
          android:hint="23:00 - 00:00"
-<<<<<<< HEAD
         android:ems="10" 
-        android:background="#FFFFCC"
-        
-        />
-=======
-        android:ems="10" />
+        android:background="#FFFFCC"/>
+    
 	<LinearLayout 
 	    android:layout_width="fill_parent"
 	    android:layout_height="wrap_content"
@@ -249,7 +245,7 @@
         android:layout_height="wrap_content"     
         android:text="KAYDET"
         android:textSize="30dp" />
->>>>>>> a72c75fc1118b5f93b700d86bb6c3172adbd95fa
+
     
      <Button
         android:id="@+id/IPTAL"

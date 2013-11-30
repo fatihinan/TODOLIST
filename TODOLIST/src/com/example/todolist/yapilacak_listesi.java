@@ -1,5 +1,11 @@
 package com.example.todolist;
 
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+
+import org.w3c.dom.Document;
+
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.TextView;
@@ -65,12 +71,30 @@ public class yapilacak_listesi extends Activity
 		textview_21_22 = (TextView) findViewById(R.id.editText22);
 		textview_22_23 = (TextView) findViewById(R.id.editText23);
 		textview_23_24 = (TextView) findViewById(R.id.editText24);
-
-		
-
 	}
 	
 	
-	
+	 public Document YeniDosyaAcmaAyari ()
+	    {
+	        try
+	        {
+	        	DocumentBuilderFactory belge_ureteci = DocumentBuilderFactory.newInstance();
+	        	
+		   		DocumentBuilder belge_yapici = belge_ureteci.newDocumentBuilder();
+		   		
+		   		Document doc_belge = belge_yapici.newDocument();
+		   		
+		   		return doc_belge;
+		    } 
+	        catch ( ParserConfigurationException e ) 
+	        {
+				e.printStackTrace();
+				return null;
+		    }		
+	    }
+	    
+		
 
 }
+
+
