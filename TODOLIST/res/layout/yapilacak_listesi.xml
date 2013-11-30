@@ -5,6 +5,7 @@
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     >
+        
 <LinearLayout 
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -182,9 +183,28 @@
         android:layout_height="wrap_content"
          android:hint="23:00 - 00:00"
         android:ems="10" />
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:weightSum="100"
+	    >
+    <Button
+        android:id="@+id/KAYDET"
+        android:layout_weight="50"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"     
+        android:text="KAYDET"
+        android:textSize="30dp" />
     
-   
-    
+     <Button
+        android:id="@+id/IPTAL"
+        android:layout_weight="50"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"       
+        android:text="İPTAL"
+        android:textSize="30dp" />
+    </LinearLayout>
     
 </LinearLayout>
 </ScrollView>
