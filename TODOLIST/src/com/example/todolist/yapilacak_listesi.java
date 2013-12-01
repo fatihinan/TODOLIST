@@ -1,5 +1,8 @@
 package com.example.todolist;
 
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.OutputStreamWriter;
 import java.io.StringWriter;
 
 import javax.xml.parsers.DocumentBuilder;
@@ -80,6 +83,49 @@ public class yapilacak_listesi extends Activity
 		textview_23_24 = (TextView) findViewById(R.id.editText24);
 	}
 	
+	
+	
+	
+	
+	
+	
+	   public void DosyaKaydet( String str_klasor_adi,
+								   	String str_dosya_adi,
+								   	String str_kaydedilecek_dosya
+								  )
+	   	{
+			try 
+			{
+				String str_dizin = "/sdcard/" + str_klasor_adi + "/" + str_dosya_adi;
+				
+				File yeni_dosya = new File( str_dizin );
+				
+				
+				if( !yeni_dosya.exists() )
+				{
+					yeni_dosya.getParentFile().mkdir();	    				
+				}
+				
+				
+				yeni_dosya.createNewFile();
+				
+				FileOutputStream dosya_cikti = new FileOutputStream( yeni_dosya );
+				
+				OutputStreamWriter cikti_yazici = new OutputStreamWriter( dosya_cikti );
+				
+				cikti_yazici.append( str_kaydedilecek_dosya );
+				
+				cikti_yazici.close();
+				
+				dosya_cikti.close();
+			} 
+			catch ( Exception e )
+			{
+			}
+	   	}
+
+	   
+	   
 	
 	 public Document YeniDosyaAcmaAyari ()
 	    {
