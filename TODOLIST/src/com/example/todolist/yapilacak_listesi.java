@@ -232,6 +232,37 @@ public class yapilacak_listesi extends Activity
 	   		((Node) eleman_21_22).setTextContent((String) textview_21_22.getText());
 	   		((Node) eleman_22_23).setTextContent((String) textview_22_23.getText());
 	   		((Node) eleman_23_00).setTextContent((String) textview_23_24.getText());
+	   		
+	   		
+	   		((Node) kok_eleman).appendChild((Node) eleman_00_01);
+	   		((Node) kok_eleman).appendChild((Node) eleman_01_02);
+	   		((Node) kok_eleman).appendChild((Node) eleman_02_03);
+	   		((Node) kok_eleman).appendChild((Node) eleman_03_04);
+	   		((Node) kok_eleman).appendChild((Node) eleman_04_05);
+	   		((Node) kok_eleman).appendChild((Node) eleman_05_06);
+	   		((Node) kok_eleman).appendChild((Node) eleman_06_07);
+	   		((Node) kok_eleman).appendChild((Node) eleman_07_08);
+	   		((Node) kok_eleman).appendChild((Node) eleman_08_09);
+	   		((Node) kok_eleman).appendChild((Node) eleman_09_10);
+	   		((Node) kok_eleman).appendChild((Node) eleman_10_11);
+	   		((Node) kok_eleman).appendChild((Node) eleman_11_12);
+	   		((Node) kok_eleman).appendChild((Node) eleman_12_13);
+	   		((Node) kok_eleman).appendChild((Node) eleman_13_14);
+	   		((Node) kok_eleman).appendChild((Node) eleman_14_15);
+	   		((Node) kok_eleman).appendChild((Node) eleman_15_16);
+	   		((Node) kok_eleman).appendChild((Node) eleman_16_17);
+	   		((Node) kok_eleman).appendChild((Node) eleman_17_18);
+	   		((Node) kok_eleman).appendChild((Node) eleman_18_19);
+	   		((Node) kok_eleman).appendChild((Node) eleman_19_20);
+	   		((Node) kok_eleman).appendChild((Node) eleman_20_21);
+	   		((Node) kok_eleman).appendChild((Node) eleman_21_22);
+	   		((Node) kok_eleman).appendChild((Node) eleman_22_23);
+	   		((Node) kok_eleman).appendChild((Node) eleman_23_00);
+	   		
+	        String str_string_belgeden = Im_BelgedenStringYarat( doc_belge );
+	   		
+	   		DosyaKaydet( "", "", str_string_belgeden );
+
 	}  
 	   
 		
