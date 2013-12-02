@@ -241,23 +241,29 @@
 	    android:weightSum="100"
 	    >
     <Button
-        android:id="@+id/KAYDET"
+        android:id="@+id/SAVE"
         android:layout_weight="50"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"     
+<<<<<<< HEAD
         android:text="KAYDET"
         android:textSize="30dp" 
         android:background="#9dd53a"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         />
+=======
+        android:text="SAVE"
+        android:textSize="30dp" />
+>>>>>>> f15948166f83d2fdd4fc844ca114341ccc76579b
 
     
      <Button
-        android:id="@+id/IPTAL"
+        android:id="@+id/CANCEL"
         android:layout_weight="50"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"       
+<<<<<<< HEAD
         android:text="İPTAL"
         android:textSize="30dp"
         android:background="#9dd53a" 
@@ -265,6 +271,10 @@
         android:layout_marginRight="15dp"
         
         />
+=======
+        android:text="CANCEL"
+        android:textSize="30dp" />
+>>>>>>> f15948166f83d2fdd4fc844ca114341ccc76579b
     </LinearLayout>
     
 </LinearLayout>
