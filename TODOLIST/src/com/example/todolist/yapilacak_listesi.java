@@ -15,9 +15,11 @@ import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 
 import org.w3c.dom.Document;
+import org.w3c.dom.Node;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.renderscript.Element;
 import android.widget.TextView;
 
 public class yapilacak_listesi extends Activity
@@ -173,7 +175,64 @@ public class yapilacak_listesi extends Activity
 	       }
 	   }
 	   
-	   
+	   public void Kaydet()
+		{
+			Document doc_belge = YeniDosyaAcmaAyari(); 
+			
+	   		Element kok_eleman = (Element) doc_belge.createElement( "saatler" );	
+	   		doc_belge.appendChild( (Node) kok_eleman );
+	   		
+	   		Element eleman_00_01 = (Element) doc_belge.createElement("00-01");
+	   		Element eleman_01_02 = (Element) doc_belge.createElement("01-02");
+	   		Element eleman_02_03 = (Element) doc_belge.createElement("02-03");
+	   		Element eleman_03_04 = (Element) doc_belge.createElement("03-04");
+	   		Element eleman_04_05 = (Element) doc_belge.createElement("04-05");
+	   		Element eleman_05_06 = (Element) doc_belge.createElement("05-06");
+	   		Element eleman_06_07 = (Element) doc_belge.createElement("06-07");
+	   		Element eleman_07_08 = (Element) doc_belge.createElement("07-08");
+	   		Element eleman_08_09 = (Element) doc_belge.createElement("08-09");
+	   		Element eleman_09_10 = (Element) doc_belge.createElement("09-10");
+	   		Element eleman_10_11 = (Element) doc_belge.createElement("10-11");
+	   		Element eleman_11_12 = (Element) doc_belge.createElement("11-12");
+	   		Element eleman_12_13 = (Element) doc_belge.createElement("12-13");
+	   		Element eleman_13_14 = (Element) doc_belge.createElement("13-14");
+	   		Element eleman_14_15 = (Element) doc_belge.createElement("14-15");
+	   		Element eleman_15_16 = (Element) doc_belge.createElement("15-16");
+	   		Element eleman_16_17 = (Element) doc_belge.createElement("16-17");
+	   		Element eleman_17_18 = (Element) doc_belge.createElement("17-18");
+	   		Element eleman_18_19 = (Element) doc_belge.createElement("18-19");
+	   		Element eleman_19_20 = (Element) doc_belge.createElement("19-20");
+	   		Element eleman_20_21 = (Element) doc_belge.createElement("20-21");
+	   		Element eleman_21_22 = (Element) doc_belge.createElement("21-22");
+	   		Element eleman_22_23 = (Element) doc_belge.createElement("22-23");
+	   		Element eleman_23_00 = (Element) doc_belge.createElement("23-00");
+	   		
+	   		
+	   		((Node) eleman_00_01).setTextContent((String) textview_0_1.getText());
+	   		((Node) eleman_01_02).setTextContent((String) textview_1_2.getText());
+	   		((Node) eleman_02_03).setTextContent((String) textview_2_3.getText());
+	   		((Node) eleman_03_04).setTextContent((String) textview_3_4.getText());
+	   		((Node) eleman_04_05).setTextContent((String) textview_4_5.getText());
+	   		((Node) eleman_05_06).setTextContent((String) textview_5_6.getText());
+	   		((Node) eleman_06_07).setTextContent((String) textview_6_7.getText());
+	   		((Node) eleman_07_08).setTextContent((String) textview_7_8.getText());
+	   		((Node) eleman_08_09).setTextContent((String) textview_8_9.getText());
+	   		((Node) eleman_09_10).setTextContent((String) textview_9_10.getText());
+	   		((Node) eleman_10_11).setTextContent((String) textview_10_11.getText());
+	   		((Node) eleman_11_12).setTextContent((String) textview_11_12.getText());
+	   		((Node) eleman_12_13).setTextContent((String) textview_12_13.getText());
+	   		((Node) eleman_13_14).setTextContent((String) textview_13_14.getText());
+	   		((Node) eleman_14_15).setTextContent((String) textview_14_15.getText());
+	   		((Node) eleman_15_16).setTextContent((String) textview_15_16.getText());
+	   		((Node) eleman_16_17).setTextContent((String) textview_16_17.getText());
+	   		((Node) eleman_17_18).setTextContent((String) textview_17_18.getText());
+	   		((Node) eleman_18_19).setTextContent((String) textview_18_19.getText());
+	   		((Node) eleman_19_20).setTextContent((String) textview_19_20.getText());
+	   		((Node) eleman_20_21).setTextContent((String) textview_20_21.getText());
+	   		((Node) eleman_21_22).setTextContent((String) textview_21_22.getText());
+	   		((Node) eleman_22_23).setTextContent((String) textview_22_23.getText());
+	   		((Node) eleman_23_00).setTextContent((String) textview_23_24.getText());
+	}  
 	   
 		
 
