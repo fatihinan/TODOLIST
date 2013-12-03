@@ -18,6 +18,7 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.renderscript.Element;
 import android.widget.TextView;
@@ -266,7 +267,15 @@ public class yapilacak_listesi extends Activity
 
 	}  
 	   
-		
+	   public void EmailYolla(String subject, String body, String chooserTitle) {
+		   Intent mailIntent = new Intent();
+		   mailIntent.setAction(Intent.ACTION_SEND);
+		   mailIntent.setType("message/rfc822");
+		   mailIntent.putExtra(Intent.EXTRA_EMAIL, new String[] {""});
+		   mailIntent.putExtra(Intent.EXTRA_SUBJECT, subject);
+		   mailIntent.putExtra(Intent.EXTRA_TEXT, body);
+		   startActivity(Intent.createChooser(mailIntent, chooserTitle));
+		 }	
 
 }
 
