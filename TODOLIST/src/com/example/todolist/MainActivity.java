@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 public class MainActivity extends Activity {
 	
-	CalendarView takvim;
+	public static CalendarView takvim;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
