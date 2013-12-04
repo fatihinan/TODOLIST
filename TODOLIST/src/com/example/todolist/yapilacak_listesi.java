@@ -21,6 +21,9 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.renderscript.Element;
+import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.TextView;
 
 public class yapilacak_listesi extends Activity
@@ -97,6 +100,7 @@ public class yapilacak_listesi extends Activity
 								   	String str_kaydedilecek_dosya
 								  )
 	   	{
+		   
 			try 
 			{
 				String str_dizin = "/sdcard/" + str_klasor_adi + "/" + str_dosya_adi;
@@ -150,7 +154,7 @@ public class yapilacak_listesi extends Activity
 	    }
 	    
 		
-	   public String Im_BelgedenStringYarat( Document doc_belge )
+	   public String BelgedenStringYarat( Document doc_belge )
 	   {
 	       try
 	       {
@@ -176,9 +180,19 @@ public class yapilacak_listesi extends Activity
 	       }
 	   }
 	   
-	   public void Kaydet()
+	   
+	   public void Iptal(View view)
+	   {
+		    Animation tiklama_animasyonu = AnimationUtils.loadAnimation(this,android.R.anim.fade_in);
+			view.startAnimation(tiklama_animasyonu);
+	   }
+	   
+	   public void Kaydet(View view)
 		{
 		   
+		    Animation tiklama_animasyonu = AnimationUtils.loadAnimation(this,android.R.anim.fade_in);
+			view.startAnimation(tiklama_animasyonu);
+			
 			Document doc_belge = YeniDosyaAcmaAyari(); 
 			
 	   		Element kok_eleman = (Element) doc_belge.createElement( "saatler" );	
@@ -261,13 +275,14 @@ public class yapilacak_listesi extends Activity
 	   		((Node) kok_eleman).appendChild((Node) eleman_22_23);
 	   		((Node) kok_eleman).appendChild((Node) eleman_23_00);
 	   		
-	        String str_string_belgeden = Im_BelgedenStringYarat( doc_belge );
+	        String str_string_belgeden = BelgedenStringYarat( doc_belge );
 	   		
-	   		DosyaKaydet( "", "", str_string_belgeden );
+	   		DosyaKaydet( "todo", "deneme.xml", str_string_belgeden );
 
 	}  
 	   
-	   public void EmailYolla(String subject, String body, String chooserTitle) {
+	   public void EmailYolla(String subject, String body, String chooserTitle) 
+	   {
 		   Intent mailIntent = new Intent();
 		   mailIntent.setAction(Intent.ACTION_SEND);
 		   mailIntent.setType("message/rfc822");
