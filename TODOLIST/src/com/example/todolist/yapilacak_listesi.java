@@ -196,8 +196,8 @@ public class yapilacak_listesi extends Activity
 			
 			Document doc_belge = YeniDosyaAcmaAyari(); 
 			
-	   		Element kok_eleman = (Element) doc_belge.createElement( "saatler" );	
-	   		doc_belge.appendChild( (Node) kok_eleman );
+	   		Element kok_eleman = doc_belge.createElement( "saatler" );	
+	   		doc_belge.appendChild(kok_eleman );
 	   		
 	   		Element eleman_00_01 = doc_belge.createElement("saat_00_01");
 	   		Element eleman_01_02 = doc_belge.createElement("saat_01_02");
@@ -278,7 +278,7 @@ public class yapilacak_listesi extends Activity
 	   		
 	        String str_string_belgeden = BelgedenStringYarat( doc_belge );
 	   		
-	   		DosyaKaydet( "todo", "deneme.xml", str_string_belgeden );
+	   		DosyaKaydet( "TODO", "deneme.xml", str_string_belgeden );
 
 	}  
 	   
