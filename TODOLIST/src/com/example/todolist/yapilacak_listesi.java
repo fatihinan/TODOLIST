@@ -16,11 +16,11 @@ import javax.xml.transform.stream.StreamResult;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
+import org.w3c.dom.Element;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.renderscript.Element;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -103,7 +103,7 @@ public class yapilacak_listesi extends Activity
 		   
 			try 
 			{
-				String str_dizin = "/sdcard/" + str_klasor_adi + "/" + str_dosya_adi;
+				String str_dizin = "/mnt/sdcard/" + str_klasor_adi + "/" + str_dosya_adi;
 				
 				File yeni_dosya = new File( str_dizin );
 				
@@ -171,6 +171,7 @@ public class yapilacak_listesi extends Activity
 				donusturucu.transform( belge_kaynagi, sonuc );
 				
 				String str_yazici = yazici.toString();
+				
 				return str_yazici;
 	       }
 	       catch( TransformerException ex )
@@ -198,82 +199,82 @@ public class yapilacak_listesi extends Activity
 	   		Element kok_eleman = (Element) doc_belge.createElement( "saatler" );	
 	   		doc_belge.appendChild( (Node) kok_eleman );
 	   		
-	   		Element eleman_00_01 = (Element) doc_belge.createElement("00-01");
-	   		Element eleman_01_02 = (Element) doc_belge.createElement("01-02");
-	   		Element eleman_02_03 = (Element) doc_belge.createElement("02-03");
-	   		Element eleman_03_04 = (Element) doc_belge.createElement("03-04");
-	   		Element eleman_04_05 = (Element) doc_belge.createElement("04-05");
-	   		Element eleman_05_06 = (Element) doc_belge.createElement("05-06");
-	   		Element eleman_06_07 = (Element) doc_belge.createElement("06-07");
-	   		Element eleman_07_08 = (Element) doc_belge.createElement("07-08");
-	   		Element eleman_08_09 = (Element) doc_belge.createElement("08-09");
-	   		Element eleman_09_10 = (Element) doc_belge.createElement("09-10");
-	   		Element eleman_10_11 = (Element) doc_belge.createElement("10-11");
-	   		Element eleman_11_12 = (Element) doc_belge.createElement("11-12");
-	   		Element eleman_12_13 = (Element) doc_belge.createElement("12-13");
-	   		Element eleman_13_14 = (Element) doc_belge.createElement("13-14");
-	   		Element eleman_14_15 = (Element) doc_belge.createElement("14-15");
-	   		Element eleman_15_16 = (Element) doc_belge.createElement("15-16");
-	   		Element eleman_16_17 = (Element) doc_belge.createElement("16-17");
-	   		Element eleman_17_18 = (Element) doc_belge.createElement("17-18");
-	   		Element eleman_18_19 = (Element) doc_belge.createElement("18-19");
-	   		Element eleman_19_20 = (Element) doc_belge.createElement("19-20");
-	   		Element eleman_20_21 = (Element) doc_belge.createElement("20-21");
-	   		Element eleman_21_22 = (Element) doc_belge.createElement("21-22");
-	   		Element eleman_22_23 = (Element) doc_belge.createElement("22-23");
-	   		Element eleman_23_00 = (Element) doc_belge.createElement("23-00");
+	   		Element eleman_00_01 = doc_belge.createElement("saat_00_01");
+	   		Element eleman_01_02 = doc_belge.createElement("saat_01_02");
+	   		Element eleman_02_03 = doc_belge.createElement("saat_02_03");
+	   		Element eleman_03_04 = doc_belge.createElement("saat_03_04");
+	   		Element eleman_04_05 = doc_belge.createElement("saat_04_05");
+	   		Element eleman_05_06 = doc_belge.createElement("saat_05_06");
+	   		Element eleman_06_07 = doc_belge.createElement("saat_06_07");
+	   		Element eleman_07_08 = doc_belge.createElement("saat_07_08");
+	   		Element eleman_08_09 = doc_belge.createElement("saat_08_09");
+	   		Element eleman_09_10 = doc_belge.createElement("saat_09_10");
+	   		Element eleman_10_11 = doc_belge.createElement("saat_10_11");
+	   		Element eleman_11_12 = doc_belge.createElement("saat_11_12");
+	   		Element eleman_12_13 = doc_belge.createElement("saat_12_13");
+	   		Element eleman_13_14 = doc_belge.createElement("saat_13_14");
+	   		Element eleman_14_15 = doc_belge.createElement("saat_14_15");
+	   		Element eleman_15_16 = doc_belge.createElement("saat_15_16");
+	   		Element eleman_16_17 = doc_belge.createElement("saat_16_17");
+	   		Element eleman_17_18 = doc_belge.createElement("saat_17_18");
+	   		Element eleman_18_19 = doc_belge.createElement("saat_18_19");
+	   		Element eleman_19_20 = doc_belge.createElement("saat_19_20");
+	   		Element eleman_20_21 = doc_belge.createElement("saat_20_21");
+	   		Element eleman_21_22 = doc_belge.createElement("saat_21_22");
+	   		Element eleman_22_23 = doc_belge.createElement("saat_22_23");
+	   		Element eleman_23_00 = doc_belge.createElement("saat_23_00");
+
+	   		
+	   		eleman_00_01.setTextContent(textview_0_1.getText().toString());
+	   		eleman_01_02.setTextContent(textview_1_2.getText().toString());
+	   		eleman_02_03.setTextContent(textview_2_3.getText().toString());
+	   		eleman_03_04.setTextContent(textview_3_4.getText().toString());
+	   		eleman_04_05.setTextContent(textview_4_5.getText().toString());
+	   		eleman_05_06.setTextContent(textview_5_6.getText().toString());
+	   		eleman_06_07.setTextContent(textview_6_7.getText().toString());
+	   		eleman_07_08.setTextContent(textview_7_8.getText().toString());
+	   		eleman_08_09.setTextContent(textview_8_9.getText().toString());
+	   		eleman_09_10.setTextContent(textview_9_10.getText().toString());
+	   		eleman_10_11.setTextContent(textview_10_11.getText().toString());
+	   		eleman_11_12.setTextContent(textview_11_12.getText().toString());
+	   		eleman_12_13.setTextContent(textview_12_13.getText().toString());
+	   		eleman_13_14.setTextContent(textview_13_14.getText().toString());
+	   		eleman_14_15.setTextContent(textview_14_15.getText().toString());
+	   		eleman_15_16.setTextContent(textview_15_16.getText().toString());
+	   		eleman_16_17.setTextContent(textview_16_17.getText().toString());
+	   		eleman_17_18.setTextContent(textview_17_18.getText().toString());
+	   		eleman_18_19.setTextContent(textview_18_19.getText().toString());
+	   		eleman_19_20.setTextContent(textview_19_20.getText().toString());
+	   		eleman_20_21.setTextContent(textview_20_21.getText().toString());
+	   		eleman_21_22.setTextContent(textview_21_22.getText().toString());
+	   		eleman_22_23.setTextContent(textview_22_23.getText().toString());
+	   		eleman_23_00.setTextContent(textview_23_24.getText().toString());
 	   		
 	   		
-	   		((Node) eleman_00_01).setTextContent((String) textview_0_1.getText());
-	   		((Node) eleman_01_02).setTextContent((String) textview_1_2.getText());
-	   		((Node) eleman_02_03).setTextContent((String) textview_2_3.getText());
-	   		((Node) eleman_03_04).setTextContent((String) textview_3_4.getText());
-	   		((Node) eleman_04_05).setTextContent((String) textview_4_5.getText());
-	   		((Node) eleman_05_06).setTextContent((String) textview_5_6.getText());
-	   		((Node) eleman_06_07).setTextContent((String) textview_6_7.getText());
-	   		((Node) eleman_07_08).setTextContent((String) textview_7_8.getText());
-	   		((Node) eleman_08_09).setTextContent((String) textview_8_9.getText());
-	   		((Node) eleman_09_10).setTextContent((String) textview_9_10.getText());
-	   		((Node) eleman_10_11).setTextContent((String) textview_10_11.getText());
-	   		((Node) eleman_11_12).setTextContent((String) textview_11_12.getText());
-	   		((Node) eleman_12_13).setTextContent((String) textview_12_13.getText());
-	   		((Node) eleman_13_14).setTextContent((String) textview_13_14.getText());
-	   		((Node) eleman_14_15).setTextContent((String) textview_14_15.getText());
-	   		((Node) eleman_15_16).setTextContent((String) textview_15_16.getText());
-	   		((Node) eleman_16_17).setTextContent((String) textview_16_17.getText());
-	   		((Node) eleman_17_18).setTextContent((String) textview_17_18.getText());
-	   		((Node) eleman_18_19).setTextContent((String) textview_18_19.getText());
-	   		((Node) eleman_19_20).setTextContent((String) textview_19_20.getText());
-	   		((Node) eleman_20_21).setTextContent((String) textview_20_21.getText());
-	   		((Node) eleman_21_22).setTextContent((String) textview_21_22.getText());
-	   		((Node) eleman_22_23).setTextContent((String) textview_22_23.getText());
-	   		((Node) eleman_23_00).setTextContent((String) textview_23_24.getText());
-	   		
-	   		
-	   		((Node) kok_eleman).appendChild((Node) eleman_00_01);
-	   		((Node) kok_eleman).appendChild((Node) eleman_01_02);
-	   		((Node) kok_eleman).appendChild((Node) eleman_02_03);
-	   		((Node) kok_eleman).appendChild((Node) eleman_03_04);
-	   		((Node) kok_eleman).appendChild((Node) eleman_04_05);
-	   		((Node) kok_eleman).appendChild((Node) eleman_05_06);
-	   		((Node) kok_eleman).appendChild((Node) eleman_06_07);
-	   		((Node) kok_eleman).appendChild((Node) eleman_07_08);
-	   		((Node) kok_eleman).appendChild((Node) eleman_08_09);
-	   		((Node) kok_eleman).appendChild((Node) eleman_09_10);
-	   		((Node) kok_eleman).appendChild((Node) eleman_10_11);
-	   		((Node) kok_eleman).appendChild((Node) eleman_11_12);
-	   		((Node) kok_eleman).appendChild((Node) eleman_12_13);
-	   		((Node) kok_eleman).appendChild((Node) eleman_13_14);
-	   		((Node) kok_eleman).appendChild((Node) eleman_14_15);
-	   		((Node) kok_eleman).appendChild((Node) eleman_15_16);
-	   		((Node) kok_eleman).appendChild((Node) eleman_16_17);
-	   		((Node) kok_eleman).appendChild((Node) eleman_17_18);
-	   		((Node) kok_eleman).appendChild((Node) eleman_18_19);
-	   		((Node) kok_eleman).appendChild((Node) eleman_19_20);
-	   		((Node) kok_eleman).appendChild((Node) eleman_20_21);
-	   		((Node) kok_eleman).appendChild((Node) eleman_21_22);
-	   		((Node) kok_eleman).appendChild((Node) eleman_22_23);
-	   		((Node) kok_eleman).appendChild((Node) eleman_23_00);
+	   		kok_eleman.appendChild(eleman_00_01);
+	   		kok_eleman.appendChild(eleman_01_02);
+	   		kok_eleman.appendChild(eleman_02_03);
+	   		kok_eleman.appendChild(eleman_03_04);
+	   		kok_eleman.appendChild(eleman_04_05);
+	   		kok_eleman.appendChild(eleman_05_06);
+	   		kok_eleman.appendChild(eleman_06_07);
+	   		kok_eleman.appendChild(eleman_07_08);
+	   		kok_eleman.appendChild(eleman_08_09);
+	   		kok_eleman.appendChild(eleman_09_10);
+	   		kok_eleman.appendChild(eleman_10_11);
+	   		kok_eleman.appendChild(eleman_11_12);
+	   		kok_eleman.appendChild(eleman_12_13);
+	   		kok_eleman.appendChild(eleman_13_14);
+	   		kok_eleman.appendChild(eleman_14_15);
+	   		kok_eleman.appendChild(eleman_15_16);
+	   		kok_eleman.appendChild(eleman_16_17);
+	   		kok_eleman.appendChild(eleman_17_18);
+	   		kok_eleman.appendChild(eleman_18_19);
+	   		kok_eleman.appendChild(eleman_19_20);
+	   		kok_eleman.appendChild(eleman_20_21);
+	   		kok_eleman.appendChild(eleman_21_22);
+	   		kok_eleman.appendChild(eleman_22_23);
+	   		kok_eleman.appendChild(eleman_23_00);
 	   		
 	        String str_string_belgeden = BelgedenStringYarat( doc_belge );
 	   		
