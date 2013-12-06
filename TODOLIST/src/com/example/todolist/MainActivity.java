@@ -62,6 +62,15 @@ public class MainActivity extends Activity {
 		if(KeyCode==KeyEvent.KEYCODE_BACK && event.getRepeatCount()==0)
 		{
 			try{
+				AlertDialog.Builder builder=new AlertDialog.Builder(this);
+				builder.setTitle("Çýkmak istediðinize emin misiniz?").setCancelable(false).setPositiveButton("Tamam", new OnClickListener(){
+					
+				});
+				
+				AlertDialog alert=builder.create();
+				alert.show();
+				
+				return super.onKeyDown(KeyCode, event);
 				
 			}catch(IllegalStateException e){
 				e.printStackTrace();
