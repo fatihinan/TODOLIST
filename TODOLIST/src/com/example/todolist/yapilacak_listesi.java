@@ -278,7 +278,9 @@ public class yapilacak_listesi extends Activity
 	   		
 	        String str_string_belgeden = BelgedenStringYarat( doc_belge );
 	   		
-	   		DosyaKaydet( "TODO", "deneme.xml", str_string_belgeden );
+	        String str_dosya_ismi = MainActivity.str_day + "_" + MainActivity.str_month + "_" + MainActivity.str_year + ".xml";
+	        
+	   		DosyaKaydet( "TODO", str_dosya_ismi, str_string_belgeden );
 
 	}  
 	   

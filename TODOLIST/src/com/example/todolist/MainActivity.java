@@ -12,6 +12,9 @@ import android.widget.Toast;
 public class MainActivity extends Activity {
 	
 	public static CalendarView takvim;
+	public static String str_year;
+	public static String str_month;
+	public static String str_day;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +30,10 @@ public class MainActivity extends Activity {
 			int year, int month, int dayOfMonth) {
 			Toast.makeText(getApplicationContext(),
 			dayOfMonth +"/"+month+"/"+ year,Toast.LENGTH_LONG).show();
+			
+			str_year = Integer.toString(year);
+			str_month = Integer.toString(month);
+			str_day = Integer.toString(dayOfMonth);
 			
 	    	startActivity(new Intent("android.intent.action.YAPILACAK_LISTESI"));
 			
