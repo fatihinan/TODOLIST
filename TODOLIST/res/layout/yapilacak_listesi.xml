@@ -31,7 +31,7 @@
         android:layout_height="wrap_content"
          android:hint="01:00 - 02:00"
         android:ems="10"
-        android:background="#FFFFCC"
+        android:background="#33CCCC"
          />
 
     <EditText
@@ -49,7 +49,7 @@
         android:layout_height="wrap_content"
          android:hint="03:00 - 04:00"
         android:ems="10" 
-        android:background="#FFFFCC"
+        android:background="#33CCCC"
         />
 
     <EditText
@@ -67,7 +67,7 @@
         android:layout_height="wrap_content"
          android:hint="05:00 - 06:00"
         android:ems="10" 
-        android:background="#FFFFCC"
+        android:background="#33CCCC"
         />
     
     <EditText
@@ -86,7 +86,7 @@
         android:layout_height="wrap_content"
          android:hint="07:00 - 08:00"
         android:ems="10"
-        android:background="#FFFFCC"
+        android:background="#33CCCC"
          />
 
     <EditText
@@ -104,7 +104,7 @@
         android:layout_height="wrap_content"
          android:hint="09:00 - 10:00"
         android:ems="10"
-        android:background="#FFFFCC"
+        android:background="#33CCCC"
          />
 
     <EditText
@@ -122,7 +122,7 @@
         android:layout_height="wrap_content"
          android:hint="11:00 - 12:00"
         android:ems="10"
-        android:background="#FFFFCC"
+        android:background="#33CCCC"
          />
 
     <EditText
@@ -140,7 +140,7 @@
         android:layout_height="wrap_content"
          android:hint="13:00 - 14:00"
         android:ems="10" 
-        android:background="#FFFFCC"
+        android:background="#33CCCC"
         />
 
     <EditText
@@ -158,7 +158,7 @@
         android:layout_height="wrap_content"
          android:hint="15:00 - 16:00"
         android:ems="10"
-        android:background="#FFFFCC"
+        android:background="#33CCCC"
          />
 
     <EditText
@@ -176,7 +176,7 @@
         android:layout_height="wrap_content"
          android:hint="17:00 - 18:00"
         android:ems="10"
-        android:background="#FFFFCC"
+        android:background="#33CCCC"
          />
 
      <EditText
@@ -195,7 +195,7 @@
         android:layout_height="wrap_content"
          android:hint="19:00 - 20:00"
         android:ems="10" 
-       android:background="#FFFFCC"
+       android:background="#33CCCC"
         />
 
     <EditText
@@ -213,7 +213,7 @@
         android:layout_height="wrap_content"
          android:hint="21:00 - 22:00"
         android:ems="10"
-        android:background="#FFFFCC"
+        android:background="#33CCCC"
          />
 
     <EditText
@@ -232,7 +232,7 @@
         android:layout_height="wrap_content"
          android:hint="23:00 - 00:00"
         android:ems="10" 
-        android:background="#FFFFCC"/>
+        android:background="#33CCCC"/>
     
 	<LinearLayout 
 	    android:layout_width="fill_parent"
