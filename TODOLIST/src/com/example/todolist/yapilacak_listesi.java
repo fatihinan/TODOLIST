@@ -186,6 +186,9 @@ public class yapilacak_listesi extends Activity
 	   {
 		    Animation tiklama_animasyonu = AnimationUtils.loadAnimation(this,android.R.anim.fade_in);
 			view.startAnimation(tiklama_animasyonu);
+			Intent ana_ekran = new Intent (this,MainActivity.class);
+			ana_ekran.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+			startActivity(ana_ekran);
 	   }
 	   
 	   public void Kaydet(View view)

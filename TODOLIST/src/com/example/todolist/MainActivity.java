@@ -4,6 +4,7 @@ package com.example.todolist;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
+import android.view.KeyEvent;
 import android.view.Menu;
 import android.widget.CalendarView;
 import android.widget.CalendarView.OnDateChangeListener;
@@ -53,6 +54,20 @@ public class MainActivity extends Activity {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
+	}
+	
+	/*uygulamadan çýkmak istenildiðinde çýkmak istiyormusunuz diye soracak */
+	public boolean onKeyDown(int KeyCode,KeyEvent event)
+	{
+		if(KeyCode==KeyEvent.KEYCODE_BACK && event.getRepeatCount()==0)
+		{
+			try{
+				
+			}catch(IllegalStateException e){
+				e.printStackTrace();
+			}
+		}
+		return  super.onKeyDown(KeyCode, event);
 	}
 
 }
