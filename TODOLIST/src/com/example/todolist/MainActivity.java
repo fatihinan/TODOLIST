@@ -3,6 +3,9 @@ package com.example.todolist;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.content.DialogInterface.OnClickListener;
 import android.content.Intent;
 import android.view.KeyEvent;
 import android.view.Menu;
@@ -64,7 +67,21 @@ public class MainActivity extends Activity {
 			try{
 				AlertDialog.Builder builder=new AlertDialog.Builder(this);
 				builder.setTitle("Çýkmak istediðinize emin misiniz?").setCancelable(false).setPositiveButton("Tamam", new OnClickListener(){
+					public void onClik(DialogInterface dialog,int id){
+						dialog.dismiss();
+						android.os.Process.killProcess(android.os.Process.myPid());
+					}
+
+					@Override
+					public void onClick(DialogInterface dialog, int which) {
+						// TODO Auto-generated method stub
+						
+					}
 					
+				}).setNegativeButton("iptal",new OnClickListener(){
+					public void onClick(DialogInterface dialog,int which){
+						
+					}
 				});
 				
 				AlertDialog alert=builder.create();
