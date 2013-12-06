@@ -52,6 +52,14 @@ public class MainActivity extends Activity {
 	/*uygulamadan çýkmak istenildiðinde çýkmak istiyormusunuz diye soracak */
 	public boolean onKeyDown(int KeyCode,KeyEvent event)
 	{
+		if(KeyCode==KeyEvent.KEYCODE_BACK && event.getRepeatCount()==0)
+		{
+			try{
+				
+			}catch(IllegalStateException e){
+				e.printStackTrace();
+			}
+		}
 		return  super.onKeyDown(KeyCode, event);
 	}
 
