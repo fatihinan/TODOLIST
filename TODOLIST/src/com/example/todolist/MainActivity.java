@@ -67,14 +67,12 @@ public class MainActivity extends Activity {
 			try{
 				AlertDialog.Builder builder=new AlertDialog.Builder(this);
 				builder.setTitle("Çýkmak istediðinize emin misiniz?").setCancelable(false).setPositiveButton("Tamam", new OnClickListener(){
-					public void onClik(DialogInterface dialog,int id){
-						dialog.dismiss();
-						android.os.Process.killProcess(android.os.Process.myPid());
-					}
-
+					
+						
 					@Override
 					public void onClick(DialogInterface dialog, int which) {
-						// TODO Auto-generated method stub
+						dialog.dismiss();
+						android.os.Process.killProcess(android.os.Process.myPid());
 						
 					}
 					
@@ -92,6 +90,7 @@ public class MainActivity extends Activity {
 			}catch(IllegalStateException e){
 				e.printStackTrace();
 			}
+			return true;
 		}
 		return  super.onKeyDown(KeyCode, event);
 	}
