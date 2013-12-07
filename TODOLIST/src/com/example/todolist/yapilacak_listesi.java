@@ -2,6 +2,7 @@ package com.example.todolist;
 
 import java.io.File;
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.io.StringWriter;
 
@@ -17,6 +18,8 @@ import javax.xml.transform.stream.StreamResult;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.w3c.dom.Element;
+import org.w3c.dom.NodeList;
+import org.xml.sax.SAXException;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -87,6 +90,47 @@ public class yapilacak_listesi extends Activity
 		textview_23_24 = (TextView) findViewById(R.id.editText24);
 	}
 	
+	
+	
+	
+	public Document DosyaAcmaAyari( String str_dosya_klasoru,
+			   String str_XML_dosyasi_ismi 
+			 )
+	{
+		try
+		{	
+	
+		DocumentBuilderFactory belge_uretici = DocumentBuilderFactory.newInstance();
+		
+		DocumentBuilder belge_yapici = belge_uretici.newDocumentBuilder();
+		
+		Document doc_belge = null;
+
+		try 
+		{
+			doc_belge = belge_yapici.parse( new File( "/sdcard/" + str_dosya_klasoru + "/" + str_XML_dosyasi_ismi) );
+			
+			doc_belge.normalizeDocument(); 
+			
+			return doc_belge;
+			} 
+			catch ( SAXException e ) 
+			{
+				e.printStackTrace();
+				return doc_belge;
+			} 
+			catch ( IOException e ) 
+			{
+				e.printStackTrace();
+				return doc_belge;
+			}
+		} 
+		catch ( ParserConfigurationException e ) 
+		{
+			e.printStackTrace();
+			return null;
+		}		
+	}
 	
 	
 	
