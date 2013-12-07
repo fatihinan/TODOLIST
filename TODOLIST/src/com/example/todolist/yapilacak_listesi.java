@@ -61,8 +61,6 @@ public class yapilacak_listesi extends Activity
 		setContentView(R.layout.yapilacak_listesi);
 		
 		
-		
-		
 		textview_0_1 = (TextView) findViewById(R.id.editText1);
 		textview_1_2 = (TextView) findViewById(R.id.editText2);
 		textview_2_3 = (TextView) findViewById(R.id.editText3);
@@ -88,9 +86,6 @@ public class yapilacak_listesi extends Activity
 		textview_22_23 = (TextView) findViewById(R.id.editText23);
 		textview_23_24 = (TextView) findViewById(R.id.editText24);
 	}
-	
-	
-	
 	
 	
 	

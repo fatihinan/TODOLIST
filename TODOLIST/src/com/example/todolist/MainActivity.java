@@ -41,7 +41,6 @@ public class MainActivity extends Activity {
 			
 	    	startActivity(new Intent("android.intent.action.YAPILACAK_LISTESI"));
 			
-			
 			}
 		
 		});
@@ -66,7 +65,7 @@ public class MainActivity extends Activity {
 		{
 			try{
 				AlertDialog.Builder builder=new AlertDialog.Builder(this);
-				builder.setTitle("Çýkmak istediðinize emin misiniz?").setCancelable(false).setPositiveButton("Tamam", new OnClickListener(){
+				builder.setTitle("Çýkmak istediðinize emin misiniz?").setCancelable(false).setPositiveButton("EVET", new OnClickListener(){
 					
 						
 					@Override
@@ -76,7 +75,7 @@ public class MainActivity extends Activity {
 						
 					}
 					
-				}).setNegativeButton("iptal",new OnClickListener(){
+				}).setNegativeButton("IPTAL",new OnClickListener(){
 					public void onClick(DialogInterface dialog,int which){
 						
 					}
