@@ -88,6 +88,343 @@ public class yapilacak_listesi extends Activity
 		textview_21_22 = (TextView) findViewById(R.id.editText22);
 		textview_22_23 = (TextView) findViewById(R.id.editText23);
 		textview_23_24 = (TextView) findViewById(R.id.editText24);
+		textview_0_1.setOnFocusChangeListener(new View.OnFocusChangeListener()
+		{
+		    @Override
+		    public void onFocusChange(View v, boolean hasFocus)
+		    {
+		        if (!hasFocus)
+		        {   
+		            String text = textview_0_1.getText().toString();
+		            text = "00:00 - 01:00 : " + textview_0_1.getText().toString();
+		            textview_0_1.setText(text);
+		          
+		        } 
+		    }
+		}
+		);
+		textview_1_2.setOnFocusChangeListener(new View.OnFocusChangeListener()
+		{
+		    @Override
+		    public void onFocusChange(View v, boolean hasFocus)
+		    {
+		        if (!hasFocus)
+		        {
+		        	String text = textview_1_2.getText().toString();
+		        	text = "01:00 - 02:00 : " + text;
+		        	textview_1_2.setText(text);
+		        } 
+		    }
+		}
+		);
+		textview_2_3.setOnFocusChangeListener(new View.OnFocusChangeListener()
+		{
+		    @Override
+		    public void onFocusChange(View v, boolean hasFocus)
+		    {
+		        if (!hasFocus)
+		        {
+		        	String text = textview_2_3.getText().toString();
+		        	text = "02:00 - 03:00 : " + text;
+		        	textview_2_3.setText(text);
+		        } 
+		    }
+		}
+		);
+		textview_3_4.setOnFocusChangeListener(new View.OnFocusChangeListener()
+		{
+		    @Override
+		    public void onFocusChange(View v, boolean hasFocus)
+		    {
+		        if (!hasFocus)
+		        {
+		        	String text = textview_3_4.getText().toString();
+		        	text = "03:00 - 04:00 : " + text;
+		        	textview_3_4.setText(text);
+		        } 
+		    }
+		}
+		);
+		textview_4_5.setOnFocusChangeListener(new View.OnFocusChangeListener()
+		{
+		    @Override
+		    public void onFocusChange(View v, boolean hasFocus)
+		    {
+		        if (!hasFocus)
+		        {
+		        	String text = textview_4_5.getText().toString();
+		        	text = "04:00 - 05:00 : " + text;
+		        	textview_4_5.setText(text);
+		        } 
+		    }
+		}
+		);
+		textview_5_6.setOnFocusChangeListener(new View.OnFocusChangeListener()
+		{
+		    @Override
+		    public void onFocusChange(View v, boolean hasFocus)
+		    {
+		        if (!hasFocus)
+		        {
+		        	String text = textview_5_6.getText().toString();
+		        	text = "05:00 - 06:00 : " + text;
+		        	textview_5_6.setText(text);
+		        } 
+		    }
+		}
+		);
+		textview_6_7.setOnFocusChangeListener(new View.OnFocusChangeListener()
+		{
+		    @Override
+		    public void onFocusChange(View v, boolean hasFocus)
+		    {
+		        if (!hasFocus)
+		        {
+		        	String text = textview_6_7.getText().toString();
+		        	text = "06:00 - 07:00 : " + text;
+		        	textview_6_7.setText(text);
+		        } 
+		    }
+		}
+		);
+		textview_7_8.setOnFocusChangeListener(new View.OnFocusChangeListener()
+		{
+		    @Override
+		    public void onFocusChange(View v, boolean hasFocus)
+		    {
+		        if (!hasFocus)
+		        {
+		        	String text = textview_7_8.getText().toString();
+		        	text = "07:00 - 08:00 : " + text;
+		        	textview_7_8.setText(text);
+		        } 
+		    }
+		}
+		);
+		textview_8_9.setOnFocusChangeListener(new View.OnFocusChangeListener()
+		{
+		    @Override
+		    public void onFocusChange(View v, boolean hasFocus)
+		    {
+		        if (!hasFocus)
+		        {
+		        	String text = textview_8_9.getText().toString();
+		        	text = "08:00 - 09:00 : " + text;
+		        	textview_8_9.setText(text);
+		        } 
+		    }
+		}
+		);
+		textview_9_10.setOnFocusChangeListener(new View.OnFocusChangeListener()
+		{
+		    @Override
+		    public void onFocusChange(View v, boolean hasFocus)
+		    {
+		        if (!hasFocus)
+		        {
+		        	String text = textview_9_10.getText().toString();
+		        	text = "09:00 - 10:00 : " + text;
+		        	textview_9_10.setText(text);
+		        } 
+		    }
+		}
+		);
+		textview_10_11.setOnFocusChangeListener(new View.OnFocusChangeListener()
+		{
+		    @Override
+		    public void onFocusChange(View v, boolean hasFocus)
+		    {
+		        if (!hasFocus)
+		        {
+		        	String text = textview_10_11.getText().toString();
+		        	text = "10:00 - 11:00 : " + text;
+		        	textview_10_11.setText(text);
+		        } 
+		    }
+		}
+		);
+		textview_11_12.setOnFocusChangeListener(new View.OnFocusChangeListener()
+		{
+		    @Override
+		    public void onFocusChange(View v, boolean hasFocus)
+		    {
+		        if (!hasFocus)
+		        {
+		        	String text = textview_11_12.getText().toString();
+		        	text = "11:00 - 12:00 : " + text;
+		        	textview_11_12.setText(text);
+		        } 
+		    }
+		}
+		);
+		textview_12_13.setOnFocusChangeListener(new View.OnFocusChangeListener()
+		{
+		    @Override
+		    public void onFocusChange(View v, boolean hasFocus)
+		    {
+		        if (!hasFocus)
+		        {
+		        	String text = textview_12_13.getText().toString();
+		        	text = "12:00 - 13:00 : " + text;
+		        	textview_12_13.setText(text);
+		        } 
+		    }
+		}
+		);
+		textview_13_14.setOnFocusChangeListener(new View.OnFocusChangeListener()
+		{
+		    @Override
+		    public void onFocusChange(View v, boolean hasFocus)
+		    {
+		        if (!hasFocus)
+		        {
+		        	String text = textview_13_14.getText().toString();
+		        	text = "13:00 - 14:00 : " + text;
+		        	textview_13_14.setText(text);
+		        } 
+		    }
+		}
+		);
+		textview_14_15.setOnFocusChangeListener(new View.OnFocusChangeListener()
+		{
+		    @Override
+		    public void onFocusChange(View v, boolean hasFocus)
+		    {
+		        if (!hasFocus)
+		        {
+		        	String text = textview_14_15.getText().toString();
+		        	text = "14:00 - 15:00 : " + text;
+		        	textview_14_15.setText(text);
+		        } 
+		    }
+		}
+		);
+		textview_15_16.setOnFocusChangeListener(new View.OnFocusChangeListener()
+		{
+		    @Override
+		    public void onFocusChange(View v, boolean hasFocus)
+		    {
+		        if (!hasFocus)
+		        {
+		        	String text = textview_15_16.getText().toString();
+		        	text = "15:00 - 16:00 : " + text;
+		        	textview_15_16.setText(text);
+		        } 
+		    }
+		}
+		);
+		textview_16_17.setOnFocusChangeListener(new View.OnFocusChangeListener()
+		{
+		    @Override
+		    public void onFocusChange(View v, boolean hasFocus)
+		    {
+		        if (!hasFocus)
+		        {
+		        	String text = textview_16_17.getText().toString();
+		        	text = "16:00 - 17:00 : " + text;
+		        	textview_16_17.setText(text);
+		        } 
+		    }
+		}
+		);
+		textview_17_18.setOnFocusChangeListener(new View.OnFocusChangeListener()
+		{
+		    @Override
+		    public void onFocusChange(View v, boolean hasFocus)
+		    {
+		        if (!hasFocus)
+		        {
+		        	String text = textview_17_18.getText().toString();
+		        	text = "17:00 - 18:00 : " + text;
+		        	textview_17_18.setText(text);
+		        } 
+		    }
+		}
+		);
+		textview_18_19.setOnFocusChangeListener(new View.OnFocusChangeListener()
+		{
+		    @Override
+		    public void onFocusChange(View v, boolean hasFocus)
+		    {
+		        if (!hasFocus)
+		        {
+		        	String text = textview_18_19.getText().toString();
+		        	text = "18:00 - 19:00 : " + text;
+		        	textview_18_19.setText(text);
+		        } 
+		    }
+		}
+		);
+		textview_19_20.setOnFocusChangeListener(new View.OnFocusChangeListener()
+		{
+		    @Override
+		    public void onFocusChange(View v, boolean hasFocus)
+		    {
+		        if (!hasFocus)
+		        {
+		        	String text = textview_19_20.getText().toString();
+		        	text = "19:00 - 20:00 : " + text;
+		        	textview_19_20.setText(text);
+		        } 
+		    }
+		}
+		);
+		textview_20_21.setOnFocusChangeListener(new View.OnFocusChangeListener()
+		{
+		    @Override
+		    public void onFocusChange(View v, boolean hasFocus)
+		    {
+		        if (!hasFocus)
+		        {
+		        	String text = textview_20_21.getText().toString();
+		        	text = "20:00 - 21:00 : " + text;
+		        	textview_20_21.setText(text);
+		        } 
+		    }
+		}
+		);
+		textview_21_22.setOnFocusChangeListener(new View.OnFocusChangeListener()
+		{
+		    @Override
+		    public void onFocusChange(View v, boolean hasFocus)
+		    {
+		        if (!hasFocus)
+		        {
+		        	String text = textview_21_22.getText().toString();
+		        	text = "21:00 - 22:00 : " + text;
+		        	textview_21_22.setText(text);
+		        } 
+		    }
+		}
+		);
+		textview_22_23.setOnFocusChangeListener(new View.OnFocusChangeListener()
+		{
+		    @Override
+		    public void onFocusChange(View v, boolean hasFocus)
+		    {
+		        if (!hasFocus)
+		        {
+		        	String text = textview_22_23.getText().toString();
+		        	text = "22:00 - 23:00 : " + text;
+		        	textview_22_23.setText(text);
+		        } 
+		    }
+		}
+		);
+		textview_23_24.setOnFocusChangeListener(new View.OnFocusChangeListener()
+		{
+		    @Override
+		    public void onFocusChange(View v, boolean hasFocus)
+		    {
+		        if (!hasFocus)
+		        {
+		        	String text = textview_23_24.getText().toString();
+		        	text = "23:00 - 24:00 : " + text;
+		        	textview_23_24.setText(text);
+		        } 
+		    }
+		}
+		);
 	}
 	
 	
