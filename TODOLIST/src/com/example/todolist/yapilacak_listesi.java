@@ -428,7 +428,57 @@ public class yapilacak_listesi extends Activity
 	}
 	
 	
-	
+	public String XMLEtiketVerisiOku( String str_dosya_klasoru, 
+	 		 String str_XML_dosyasi_ismi,
+	 		 String str_ust_etiket,
+	 	     String str_veri_okunacak_etiket
+		   )
+	{
+		
+		/**
+		* Okunacak verinin tutulacaðý deðiþlken oluþturulmuþtur.
+		* Deðiþkene varsayýlan deðeri verilmiþtir.
+		*/
+		String str_okunan_veri = "Veri Yok!"; 
+		
+		try
+		{
+			/**
+			* Dosyayý açmak için ayar fonksiyonu çaðrýlmaktadýr. 
+			*/
+			Document doc_belge =DosyaAcmaAyari( str_dosya_klasoru, str_XML_dosyasi_ismi ); /*Dosya açmak için ilgili fonksiyon çaðrýlmaktadýr.*/
+			
+			/**
+			* Ýçerisinde deðiþiklik yapýlmak istenen etiketler, NodeList tipinde
+			* etiketlere atandý. Okunmak istenen deðer str_okunan_veri deðiþkenine atandý.
+			*/
+			NodeList ust_etiketler = doc_belge.getElementsByTagName(str_ust_etiket);
+			
+			for ( int i = 0; i < ust_etiketler.getLength(); i++ )
+			{
+				NodeList etiketler = ust_etiketler.item(i).getChildNodes();
+				
+				for ( int j = 0; j < etiketler.getLength(); j++ )
+				{
+					Node eleman = etiketler.item(j);
+					
+					if( str_veri_okunacak_etiket.equals( eleman.getNodeName() ) )
+					{
+						str_okunan_veri=eleman.getTextContent();
+					}
+				}
+			}
+		}
+		catch ( Exception e ) 
+		{	
+			e.printStackTrace();
+		}
+		
+		/**
+		* Okunan deðer geri döndürülmüþtür.
+		*/
+		return str_okunan_veri;
+	}
 	
 	public Document DosyaAcmaAyari( String str_dosya_klasoru,
 			   String str_XML_dosyasi_ismi 
