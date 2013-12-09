@@ -89,6 +89,33 @@ public class yapilacak_listesi extends Activity
 		textview_22_23 = (TextView) findViewById(R.id.editText23);
 		textview_23_24 = (TextView) findViewById(R.id.editText24);
 		
+		String str_dosya_ismi = MainActivity.str_day + "_" + MainActivity.str_month + "_" + MainActivity.str_year + ".xml";
+		textview_0_1.setText(XMLEtiketVerisiOku("TODO", str_dosya_ismi, "saatler", "saat_00_01"));
+		textview_1_2.setText(XMLEtiketVerisiOku("TODO", str_dosya_ismi, "saatler", "saat_01_02"));
+		textview_2_3.setText(XMLEtiketVerisiOku("TODO", str_dosya_ismi, "saatler", "saat_02_03"));
+		textview_3_4.setText(XMLEtiketVerisiOku("TODO", str_dosya_ismi, "saatler", "saat_03_04"));
+		textview_4_5.setText(XMLEtiketVerisiOku("TODO", str_dosya_ismi, "saatler", "saat_04_05"));
+		textview_5_6.setText(XMLEtiketVerisiOku("TODO", str_dosya_ismi, "saatler", "saat_05_06"));
+		textview_6_7.setText(XMLEtiketVerisiOku("TODO", str_dosya_ismi, "saatler", "saat_06_07"));
+		textview_7_8.setText(XMLEtiketVerisiOku("TODO", str_dosya_ismi, "saatler", "saat_07_08"));
+		textview_8_9.setText(XMLEtiketVerisiOku("TODO", str_dosya_ismi, "saatler", "saat_08_09"));
+		textview_9_10.setText(XMLEtiketVerisiOku("TODO", str_dosya_ismi, "saatler", "saat_09_10"));
+		textview_10_11.setText(XMLEtiketVerisiOku("TODO", str_dosya_ismi, "saatler", "saat_10_11"));
+		textview_11_12.setText(XMLEtiketVerisiOku("TODO", str_dosya_ismi, "saatler", "saat_11_12"));
+		textview_12_13.setText(XMLEtiketVerisiOku("TODO", str_dosya_ismi, "saatler", "saat_12_13"));
+		textview_13_14.setText(XMLEtiketVerisiOku("TODO", str_dosya_ismi, "saatler", "saat_13_14"));
+		textview_14_15.setText(XMLEtiketVerisiOku("TODO", str_dosya_ismi, "saatler", "saat_14_15"));
+		textview_15_16.setText(XMLEtiketVerisiOku("TODO", str_dosya_ismi, "saatler", "saat_15_16"));
+		textview_16_17.setText(XMLEtiketVerisiOku("TODO", str_dosya_ismi, "saatler", "saat_16_17"));
+		textview_17_18.setText(XMLEtiketVerisiOku("TODO", str_dosya_ismi, "saatler", "saat_17_18"));
+		textview_18_19.setText(XMLEtiketVerisiOku("TODO", str_dosya_ismi, "saatler", "saat_18_19"));
+		textview_19_20.setText(XMLEtiketVerisiOku("TODO", str_dosya_ismi, "saatler", "saat_19_20"));
+		textview_20_21.setText(XMLEtiketVerisiOku("TODO", str_dosya_ismi, "saatler", "saat_20_21"));
+		textview_21_22.setText(XMLEtiketVerisiOku("TODO", str_dosya_ismi, "saatler", "saat_21_22"));
+		textview_22_23.setText(XMLEtiketVerisiOku("TODO", str_dosya_ismi, "saatler", "saat_22_23"));
+		textview_23_24.setText(XMLEtiketVerisiOku("TODO", str_dosya_ismi, "saatler", "saat_23_00"));
+		
+		
 		textview_0_1.setOnFocusChangeListener(new View.OnFocusChangeListener()
 		{
 		    @Override
