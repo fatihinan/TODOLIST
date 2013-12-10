@@ -277,7 +277,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:height="100dp"
-         android:text="23:00 - 00:00: "
+         android:text="23:00 - 24:00: "
         android:ems="10" 
         android:background="#33CCCC"
         android:textStyle="bold|italic"

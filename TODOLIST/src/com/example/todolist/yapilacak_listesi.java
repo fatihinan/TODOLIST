@@ -89,31 +89,50 @@ public class yapilacak_listesi extends Activity
 		textview_22_23 = (TextView) findViewById(R.id.editText23);
 		textview_23_24 = (TextView) findViewById(R.id.editText24);
 		
+		
+		TextView [] text_view_dizisi;
+		text_view_dizisi = new TextView [24];
+		
+		text_view_dizisi[0]=textview_0_1;
+		text_view_dizisi[1]=textview_1_2;
+		text_view_dizisi[2]=textview_2_3;
+		text_view_dizisi[3]=textview_3_4;
+		text_view_dizisi[4]=textview_4_5;
+		text_view_dizisi[5]=textview_5_6;
+		text_view_dizisi[6]=textview_6_7;
+		text_view_dizisi[7]=textview_7_8;
+		text_view_dizisi[8]=textview_8_9;
+		text_view_dizisi[9]=textview_9_10;
+		text_view_dizisi[10]=textview_10_11;
+		text_view_dizisi[11]=textview_11_12;
+		text_view_dizisi[12]=textview_12_13;
+		text_view_dizisi[13]=textview_13_14;
+		text_view_dizisi[14]=textview_14_15;
+		text_view_dizisi[15]=textview_15_16;
+		text_view_dizisi[16]=textview_16_17;
+		text_view_dizisi[17]=textview_17_18;
+		text_view_dizisi[18]=textview_18_19;
+		text_view_dizisi[19]=textview_19_20;
+		text_view_dizisi[20]=textview_20_21;
+		text_view_dizisi[21]=textview_21_22;
+		text_view_dizisi[22]=textview_22_23;
+		text_view_dizisi[23]=textview_23_24;
+		
 		String str_dosya_ismi = MainActivity.str_day + "_" + MainActivity.str_month + "_" + MainActivity.str_year + ".xml";
-		textview_0_1.setText(XMLEtiketVerisiOku("TODO", str_dosya_ismi, "saatler", "saat_00_01"));
-		textview_1_2.setText(XMLEtiketVerisiOku("TODO", str_dosya_ismi, "saatler", "saat_01_02"));
-		textview_2_3.setText(XMLEtiketVerisiOku("TODO", str_dosya_ismi, "saatler", "saat_02_03"));
-		textview_3_4.setText(XMLEtiketVerisiOku("TODO", str_dosya_ismi, "saatler", "saat_03_04"));
-		textview_4_5.setText(XMLEtiketVerisiOku("TODO", str_dosya_ismi, "saatler", "saat_04_05"));
-		textview_5_6.setText(XMLEtiketVerisiOku("TODO", str_dosya_ismi, "saatler", "saat_05_06"));
-		textview_6_7.setText(XMLEtiketVerisiOku("TODO", str_dosya_ismi, "saatler", "saat_06_07"));
-		textview_7_8.setText(XMLEtiketVerisiOku("TODO", str_dosya_ismi, "saatler", "saat_07_08"));
-		textview_8_9.setText(XMLEtiketVerisiOku("TODO", str_dosya_ismi, "saatler", "saat_08_09"));
-		textview_9_10.setText(XMLEtiketVerisiOku("TODO", str_dosya_ismi, "saatler", "saat_09_10"));
-		textview_10_11.setText(XMLEtiketVerisiOku("TODO", str_dosya_ismi, "saatler", "saat_10_11"));
-		textview_11_12.setText(XMLEtiketVerisiOku("TODO", str_dosya_ismi, "saatler", "saat_11_12"));
-		textview_12_13.setText(XMLEtiketVerisiOku("TODO", str_dosya_ismi, "saatler", "saat_12_13"));
-		textview_13_14.setText(XMLEtiketVerisiOku("TODO", str_dosya_ismi, "saatler", "saat_13_14"));
-		textview_14_15.setText(XMLEtiketVerisiOku("TODO", str_dosya_ismi, "saatler", "saat_14_15"));
-		textview_15_16.setText(XMLEtiketVerisiOku("TODO", str_dosya_ismi, "saatler", "saat_15_16"));
-		textview_16_17.setText(XMLEtiketVerisiOku("TODO", str_dosya_ismi, "saatler", "saat_16_17"));
-		textview_17_18.setText(XMLEtiketVerisiOku("TODO", str_dosya_ismi, "saatler", "saat_17_18"));
-		textview_18_19.setText(XMLEtiketVerisiOku("TODO", str_dosya_ismi, "saatler", "saat_18_19"));
-		textview_19_20.setText(XMLEtiketVerisiOku("TODO", str_dosya_ismi, "saatler", "saat_19_20"));
-		textview_20_21.setText(XMLEtiketVerisiOku("TODO", str_dosya_ismi, "saatler", "saat_20_21"));
-		textview_21_22.setText(XMLEtiketVerisiOku("TODO", str_dosya_ismi, "saatler", "saat_21_22"));
-		textview_22_23.setText(XMLEtiketVerisiOku("TODO", str_dosya_ismi, "saatler", "saat_22_23"));
-		textview_23_24.setText(XMLEtiketVerisiOku("TODO", str_dosya_ismi, "saatler", "saat_23_00"));
+		for(int i=0,j=0,z=-1 ; i<24;i++,j++)
+		{	
+			if(j%10==0)
+				z++;
+			
+			String name="saat_"+(z%10)+(j%10)+"_"+(z%10)+((j%10)+1); 
+		    if(XMLEtiketVerisiOku("TODO", str_dosya_ismi, "saatler", name)!="")
+		    {
+				text_view_dizisi[j].setText(XMLEtiketVerisiOku("TODO", str_dosya_ismi,"saatler", name));
+		    }
+		   
+		}
+		
+
 		
 		
 		textview_0_1.setOnFocusChangeListener(new View.OnFocusChangeListener()
@@ -442,7 +461,7 @@ public class yapilacak_listesi extends Activity
 		* Okunacak verinin tutulacaðý deðiþlken oluþturulmuþtur.
 		* Deðiþkene varsayýlan deðeri verilmiþtir.
 		*/
-		String str_okunan_veri = "Veri Yok!"; 
+		String str_okunan_veri="" ;
 		
 		try
 		{
@@ -466,7 +485,7 @@ public class yapilacak_listesi extends Activity
 					Node eleman = etiketler.item(j);
 					
 					if( str_veri_okunacak_etiket.equals( eleman.getNodeName() ) )
-					{
+					{   
 						str_okunan_veri=eleman.getTextContent();
 					}
 				}
@@ -480,6 +499,7 @@ public class yapilacak_listesi extends Activity
 		/**
 		* Okunan deðer geri döndürülmüþtür.
 		*/
+		
 		return str_okunan_veri;
 	}
 	
@@ -654,7 +674,7 @@ public class yapilacak_listesi extends Activity
 	   		Element eleman_20_21 = doc_belge.createElement("saat_20_21");
 	   		Element eleman_21_22 = doc_belge.createElement("saat_21_22");
 	   		Element eleman_22_23 = doc_belge.createElement("saat_22_23");
-	   		Element eleman_23_00 = doc_belge.createElement("saat_23_00");
+	   		Element eleman_23_24 = doc_belge.createElement("saat_23_24");
 
 	   		
 	   		eleman_00_01.setTextContent(textview_0_1.getText().toString());
@@ -680,7 +700,7 @@ public class yapilacak_listesi extends Activity
 	   		eleman_20_21.setTextContent(textview_20_21.getText().toString());
 	   		eleman_21_22.setTextContent(textview_21_22.getText().toString());
 	   		eleman_22_23.setTextContent(textview_22_23.getText().toString());
-	   		eleman_23_00.setTextContent(textview_23_24.getText().toString());
+	   		eleman_23_24.setTextContent(textview_23_24.getText().toString());
 	   		
 	   		
 	   		kok_eleman.appendChild(eleman_00_01);
@@ -706,7 +726,7 @@ public class yapilacak_listesi extends Activity
 	   		kok_eleman.appendChild(eleman_20_21);
 	   		kok_eleman.appendChild(eleman_21_22);
 	   		kok_eleman.appendChild(eleman_22_23);
-	   		kok_eleman.appendChild(eleman_23_00);
+			kok_eleman.appendChild(eleman_23_24);
 	   		
 	        String str_string_belgeden = BelgedenStringYarat( doc_belge );
 	   		
