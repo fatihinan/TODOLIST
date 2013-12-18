@@ -33,7 +33,7 @@ public class MainActivity extends Activity {
 			public void onSelectedDayChange(CalendarView view,
 			int year, int month, int dayOfMonth) {
 			Toast.makeText(getApplicationContext(),
-			dayOfMonth +"/"+month+"/"+ year,Toast.LENGTH_LONG).show();
+			dayOfMonth +"/"+(month+1)+"/"+ year,Toast.LENGTH_LONG).show();
 			
 			str_year = Integer.toString(year);
 			str_month = Integer.toString(month);
