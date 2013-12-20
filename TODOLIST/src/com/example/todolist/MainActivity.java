@@ -1,14 +1,16 @@
 package com.example.todolist;
 
 
-import android.os.Bundle;
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
 import android.content.Intent;
+import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.Menu;
+import android.view.View;
 import android.widget.CalendarView;
 import android.widget.CalendarView.OnDateChangeListener;
 import android.widget.Toast;
@@ -19,7 +21,8 @@ public class MainActivity extends Activity {
 	public static String str_year;
 	public static String str_month;
 	public static String str_day;
-
+	
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -44,13 +47,9 @@ public class MainActivity extends Activity {
 			}
 		
 		});
-	
+		
 	}
-			
-		
-		
 	
-
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
