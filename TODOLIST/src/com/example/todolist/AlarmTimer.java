@@ -3,7 +3,7 @@ package com.example.todolist;
 import java.text.Format;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-
+import android.net.Uri;
 import android.app.AlarmManager;
 import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
@@ -12,10 +12,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.PowerManager;
 import android.widget.Toast;
+import android.media.MediaPlayer;
+import android.util.Log;
 
 public class AlarmTimer extends BroadcastReceiver {
 
 	final public static String ONE_TIME = "onetime";
+	MediaPlayer mp=null ;
 	@Override
 	public void onReceive(Context context, Intent intent) {
 		 PowerManager pm = (PowerManager) context.getSystemService(Context.POWER_SERVICE);
@@ -57,4 +60,21 @@ public class AlarmTimer extends BroadcastReceiver {
         alarmManager.cancel(sender);
     }
   
+    /*alarm çaldýrma fonksiyonu*/
+    private void playSound(final Context context, Uri alert) {
+        
+        
+        Thread background = new Thread(new Runnable() {
+            public void run() {
+                try {
+                     
+                   mp.start();
+                    
+                } catch (Throwable t) {
+                    Log.i("Animation", "Thread  exception "+t);
+                }   
+            }
+     });
+     background.start();
+   }
 }
