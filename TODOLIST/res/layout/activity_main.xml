@@ -21,11 +21,7 @@
         
         />
     
-    <!-- AlarmTimer class ı xml e eklendi ama calendar View içerisindedeolabilie emin değilim!!! -->    
-    
-    <activity
-            android:name=".AlarmTimer"
-            android:label="@string/app_name" />
+
         
 
 </RelativeLayout>

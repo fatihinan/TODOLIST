@@ -26,41 +26,40 @@ public final class R {
         public static final int new_icon=0x7f020002;
     }
     public static final class id {
-        public static final int CANCEL=0x7f080004;
-        public static final int SAVE=0x7f080003;
+        public static final int CANCEL=0x7f08001c;
+        public static final int SAVE=0x7f08001b;
         public static final int action_settings=0x7f08001d;
-        public static final int buttons=0x7f080001;
-        public static final int editText1=0x7f080005;
-        public static final int editText10=0x7f08000e;
-        public static final int editText11=0x7f08000f;
-        public static final int editText12=0x7f080010;
-        public static final int editText13=0x7f080011;
-        public static final int editText14=0x7f080012;
-        public static final int editText15=0x7f080013;
-        public static final int editText16=0x7f080014;
-        public static final int editText17=0x7f080015;
-        public static final int editText18=0x7f080016;
-        public static final int editText19=0x7f080017;
-        public static final int editText2=0x7f080006;
-        public static final int editText20=0x7f080018;
-        public static final int editText21=0x7f080019;
-        public static final int editText22=0x7f08001a;
-        public static final int editText23=0x7f08001b;
-        public static final int editText24=0x7f08001c;
-        public static final int editText3=0x7f080007;
-        public static final int editText4=0x7f080008;
-        public static final int editText5=0x7f080009;
-        public static final int editText6=0x7f08000a;
-        public static final int editText7=0x7f08000b;
-        public static final int editText8=0x7f08000c;
-        public static final int editText9=0x7f08000d;
-        public static final int scroll=0x7f080002;
+        public static final int buttons=0x7f08001a;
+        public static final int editText1=0x7f080002;
+        public static final int editText10=0x7f08000b;
+        public static final int editText11=0x7f08000c;
+        public static final int editText12=0x7f08000d;
+        public static final int editText13=0x7f08000e;
+        public static final int editText14=0x7f08000f;
+        public static final int editText15=0x7f080010;
+        public static final int editText16=0x7f080011;
+        public static final int editText17=0x7f080012;
+        public static final int editText18=0x7f080013;
+        public static final int editText19=0x7f080014;
+        public static final int editText2=0x7f080003;
+        public static final int editText20=0x7f080015;
+        public static final int editText21=0x7f080016;
+        public static final int editText22=0x7f080017;
+        public static final int editText23=0x7f080018;
+        public static final int editText24=0x7f080019;
+        public static final int editText3=0x7f080004;
+        public static final int editText4=0x7f080005;
+        public static final int editText5=0x7f080006;
+        public static final int editText6=0x7f080007;
+        public static final int editText7=0x7f080008;
+        public static final int editText8=0x7f080009;
+        public static final int editText9=0x7f08000a;
+        public static final int scroll=0x7f080001;
         public static final int takvim=0x7f080000;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
-        public static final int sil=0x7f030001;
-        public static final int yapilacak_listesi=0x7f030002;
+        public static final int yapilacak_listesi=0x7f030001;
     }
     public static final class menu {
         public static final int main=0x7f070000;

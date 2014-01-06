@@ -21,12 +21,11 @@ public class MainActivity extends Activity {
 	public static String str_year;
 	public static String str_month;
 	public static String str_day;
-	private  AlarmTimer alarm;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		alarm = new  AlarmTimer();
+		
 		takvim = (CalendarView) findViewById(R.id.takvim);
 		
 		takvim.setOnDateChangeListener(new OnDateChangeListener(){
@@ -92,21 +91,5 @@ public class MainActivity extends Activity {
 		return  super.onKeyDown(KeyCode, event);
 	}
 
-	public void startRepeatingTimer(View view) {
-    	Context context = this.getApplicationContext();
-    	if(alarm != null){
-    		alarm.SetAlarm(context);
-    	}else{
-    		Toast.makeText(context, "Alarm is null", Toast.LENGTH_SHORT).show();
-    	}
-    }
-    
-    public void cancelRepeatingTimer(View view){
-    	Context context = this.getApplicationContext();
-    	if(alarm != null){
-    		alarm.CancelAlarm(context);
-    	}else{
-    		Toast.makeText(context, "Alarm is null", Toast.LENGTH_SHORT).show();
-    	}
-    }
+	
 }
